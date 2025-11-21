@@ -1,3 +1,11 @@
+import androidx.lifecycle.MutableLiveData
+import com.example.list_temp.data.Faculty
+import com.example.list_temp.data.ListOfFaculty
+import com.example.list_temp.data.ListOfGroup
+import com.example.list_temp.data.ListOfStudent
+import com.example.list_temp.data.Student
+import java.security.acl.Group
+
 class AppRepository {
     companion object {
         private var INSTANCE: AppRepository? = null
@@ -22,7 +30,7 @@ class AppRepository {
 
     fun addFaculty(faculty: Faculty) {
         val listTmp = (listOfFaculty.value ?: ListOfFaculty()).apply {
-            item.add(faculty)
+            items.add(faculty)
         }
 
         listOfFaculty.postValue(listTmp)
@@ -56,7 +64,7 @@ class AppRepository {
     }
 
     fun deleteFaculty(faculty: Faculty) {
-        va; listTmp = listOfFaculty..value!!
+        val listTmp = listOfFaculty.value!!
         if (listTmp.items.remove(faculty)) {
             listOfFaculty.postValue(listTmp)
         }

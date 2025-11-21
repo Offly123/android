@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MenuAddFaculty"
+        android:title="Добавить факультет" />
+    <item
+        android:id="@+id/MenuChangeFaculty"
+        android:title="Изменить факультет" />
+    <item
+        android:id="@+id/MenuDeleteFaculty"
+        android:title="Удалить факультет" />
+    <item
+        android:id="@+id/MenuAddGroup"
+        android:title="Добавить группу" />
+    <item
+        android:id="@+id/MenuChangeGroup"
+        android:title="Изменить группу" />
+    <item
+        android:id="@+id/MenuDeleteGroup"
+        android:title="Удалить группу" />
+</menu>
