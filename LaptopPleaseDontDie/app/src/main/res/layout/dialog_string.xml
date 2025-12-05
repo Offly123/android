@@ -8,7 +8,7 @@
     android:layout_gravity="center|top">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center|top"
@@ -18,13 +18,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etString"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
         android:text="Наме"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
